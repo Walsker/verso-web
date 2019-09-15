@@ -1,11 +1,36 @@
 #container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(75deg, #63CB99, #B2FDD9); 
+  background: linear-gradient(75deg, var(--primaryColor), var(--lightPrimary)); 
+}
+
+#micButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--darkPrimary);
+  background: linear-gradient(#DDDDDD, #FFFFFF);
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  cursor: pointer;
+  transition: 0.4s;
+  border: 2px solid #DADADA; 
+}
+
+#micButton:hover {
+  width: 310px;
+  height: 310px;
+  color: var(--primaryColor);
+}
+
+.soundWave {
+  width: 100vw;
+  /* height: 2vh; */
 }
 
 .button {
@@ -14,3 +39,4 @@
   padding: 10px;
   border: 2px solid red;
 }
+
